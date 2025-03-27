@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  --bg-color: #f8fafc;
+  --title-color: #1e293b;
+  --text-color: #475569;
+  --placeholder-color: #94a3b8;
+  --button-color: #7c3aed;
+}
+
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.s-form{
+  padding: 40px 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.s-form h1{
+  padding-top: 114px;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--title-color)
+}
+
+.s-form p{
+  font-size: 16px;
+  padding-top: 16px;
+  color: var(--text-color);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 384px;
+  padding-top: 40px;
+}
+
+label{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--title-color);
+}
+
+input{
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 16px 12px;
+  outline: none;
+}
+
+input:focus{
+  border-color: var(--button-color);
+}
+
+form div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forgot-btn{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--button-color);
+}
+
+.forgot-btn:hover, 
+.forgot-btn:active, 
+.sign-up button:hover, 
+.sign-up button:active{
+  text-decoration: underline;
+}
+
+.sumit-btn{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 170px;
+  border-radius: 4px;
+  background-color: var(--button-color);
+  margin-top: 16px;
+}
+
+.sumit-btn:hover, 
+.sumit-btn:active{
+  background-color: #9f67ff;
+}
+
+.sign-up{
+  display: flex;
+  align-items: center;
+}
+
+.sign-up p{
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.sign-up button{
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--button-color);
+}
+
+.s-right{
+  background: url(./assets/background.png) center/cover no-repeat;
+  flex: 1;
+  height: 100vh;
+}
